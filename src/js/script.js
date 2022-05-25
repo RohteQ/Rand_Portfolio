@@ -8,3 +8,9 @@ const hamburger = document.querySelector('.hamburger'),//обращаемся к
     closeElem.addEventListener('click', () => {
         menu.classList.remove('active') //при клике на крестик убираем класс класс  актив у гамбургера//
     });
+    const counters = document.querySelectorAll('.skills__ratings-counter'), //обращаемся ко всем элементам по селектору// 
+    
+    lines = document.querySelectorAll('.skills__ratings-line span');//обращаемся к элементам спэн//
+counters.forEach( (item, i) => {                                    //прямая зависмимость,.для каждого элемента в массиве//
+    lines[i].style.width = item.innerHTML;
+})                                 //по номеру обращаемся,меняем инлайн стили ширины//
