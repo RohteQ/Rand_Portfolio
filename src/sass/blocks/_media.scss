@@ -181,6 +181,9 @@
     }
     .skills{
         padding-top: 40px;
+        &__wrapper{
+            justify-content: center;
+        }
         &__items {
             padding: 0;
             justify-content: center;
